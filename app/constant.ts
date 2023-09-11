@@ -44,6 +44,7 @@ export const NARROW_SIDEBAR_WIDTH = 100;
 export const ACCESS_CODE_PREFIX = "nk-";
 
 export const LAST_INPUT_KEY = "last-input";
+export const UNFINISHED_INPUT = (id: string) => "unfinished-input-" + id;
 
 export const REQUEST_TIMEOUT_MS = 60000;
 
@@ -58,6 +59,8 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `Tu es un assistant IA qui parle en français sans faire de commentaire ni d'introduction. Tu donnes simplement la réponse.`;
+
+export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
 
 export const DEFAULT_MODELS = [
   {
